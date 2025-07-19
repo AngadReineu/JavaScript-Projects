@@ -1,0 +1,1 @@
+http://api.openweathermap.org/data/2.5/weather?units=metric&q=bangalore&appid=7c93741e3ed7be45b7c4b8ef66d9454c
