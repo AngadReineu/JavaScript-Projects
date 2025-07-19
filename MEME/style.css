@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: #2b1d0f;
+    color: #fff;
+}
+header nav{
+    background-color: #212121;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+header nav h1{
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+header nav form{
+    display: flex;
+    justify-content: center;
+}
+
+.searchbox, .button{
+    flex-grow: 1;
+    margin-right: 10px;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 4px;
+}
+form button{
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+form button:hover{
+    background-color: #c75454;
+}
+
+
+/* responsive  */
+@media screen and 
+(max-width: 600px){
+    header nav{
+        flex-direction: column;
+    } 
+    header nav form{
+        width: 80%;
+        margin-top: 20px;
+    }    
+}
+/* main section */
+.bruh-container{
+    text-align: center;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 20px;
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    place-items: center;
+}
+.memes{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(78,73,73,0.1), -5px -5px 10px rgba(34,34,34,0.5);
+    cursor: pointer;
+    max-width: 350px;
+    transition: transform 0.3s ease-in-out;
+    
+}
+.memes:hover{
+    transform: scale(1.1);
+}
+.memes img{
+    height:200px;
+    width: 100%;
+    border-radius: 5px;
+}
+.memes p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #4a4a4a;
+    margin: 12px 0;
+    margin-block: 5px
+    
+}
+.btnmeme{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 18px auto;
+    background-color: #f44336;
+    color: white;
+    transition: background-color 0.2s ease-in-out;
+
+}
+.btnmeme:hover{
+ background-color: #c75454;
+}
+
+.meme-details{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    background-color: #694c3f;
+    border-radius: 12px;
+    width: 40%;
+    height: 60%;
+    font-size: 20px;
+}
+.memeclosebtn{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
