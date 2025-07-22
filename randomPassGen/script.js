@@ -1,5 +1,5 @@
 const btn = document.getElementById("button");
-const input = document.querySelector("#passeword");
+const input = document.querySelector("#password");
 const length = 20;
 const select = document.getElementById("img");
 let snum= document.querySelector("#c1");
@@ -34,7 +34,7 @@ let range = document.querySelector("#range")
     }
     
 
-    for(let i = 1; i<passwordLength-4;i++){
+    for(let i = 1; i<passwordLength-2;i++){
         password+=allowChar[Math.floor(Math.random()*allowChar.length)];
     }
     input.value=password
